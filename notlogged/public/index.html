@@ -57,15 +57,34 @@
 							aria-label="Username"
 							aria-describedby="basic-addon1"
 							id="searchtop"
+							style="
+								font-weight: 500;
+								width: 360px;
+								font-size: 14px;
+								line-height: 18px;
+
+								color: #5c5c5c;
+							"
 						/>
 					</div>
 				</li>
 				<li id="item1" class="nav-item">
-					<span>
+					<span
+						style="
+							font-weight: 500;
+							font-size: 16px;
+							line-height: 21px;
+							/* identical to box height */
+
+							text-align: right;
+
+							color: #2e2e2e;
+						"
+					>
 						Create account,
 						<button
 							type="button"
-							class="btn btn-outline-primary"
+							class="btn text-primary dropdown-toggle"
 							data-bs-toggle="modal"
 							data-bs-target="#exampleModal"
 						>
@@ -106,7 +125,7 @@
 		</main>
 		<div id="filter" class="row pt-3 px-0 mx-0">
 			<div class="col">
-				<h3 style="font-weight: 600">Posts(368)</h3>
+				<h3 style="font-weight: 400">Posts(368)</h3>
 			</div>
 			<div class="col d-flex flex-row-reverse">
 				<div class="dropdown">
@@ -133,25 +152,94 @@
 			style="padding-top: 55px"
 			id="allposts"
 		>
-			<li class="nav-item ">
+			<li class="nav-item">
 				<div id="sticky-list">
-					<ul class="nav nav-tabs ">
-						<li class="nav-item px-0">
-							<a class="nav-link active px-1" aria-current="page" href="#"
+					<ul class="nav nav-tabs py-3">
+						<li class="nav-item px-0" style="">
+							<a
+								class="nav-link active px-1"
+								aria-current="page"
+								href="#"
+								style="
+									font-family: IBM Plex Sans;
+									font-style: normal;
+									font-weight: normal;
+									font-size: 16px;
+									line-height: 21px;
+									/* identical to box height */
+
+									color: #000000;
+								"
 								>All Posts(32)</a
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Article</a>
+							<a
+								style="
+									font-family: IBM Plex Sans;
+									font-style: normal;
+									font-weight: normal;
+									font-size: 16px;
+									line-height: 21px;
+									/* identical to box height */
+
+									color: #8a8a8a;
+								"
+								class="nav-link"
+								href="#"
+								>Article</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Event</a>
+							<a
+								style="
+									font-family: IBM Plex Sans;
+									font-style: normal;
+									font-weight: normal;
+									font-size: 16px;
+									line-height: 21px;
+									/* identical to box height */
+
+									color: #8a8a8a;
+								"
+								class="nav-link"
+								href="#"
+								>Event</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Education</a>
+							<a
+								style="
+									font-family: IBM Plex Sans;
+									font-style: normal;
+									font-weight: normal;
+									font-size: 16px;
+									line-height: 21px;
+									/* identical to box height */
+
+									color: #8a8a8a;
+								"
+								class="nav-link"
+								href="#"
+								>Education</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Job</a>
+							<a
+								style="
+									font-family: IBM Plex Sans;
+									font-style: normal;
+									font-weight: normal;
+									font-size: 16px;
+									line-height: 21px;
+									/* identical to box height */
+
+									color: #8a8a8a;
+								"
+								class="nav-link"
+								href="#"
+								>Job</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -160,17 +248,36 @@
 				<ul id="twonav " class="nav">
 					<li id="write" class="nav-item px-3">
 						<button
-							class="btn btn-secondary dropdown-toggle"
+							class="btn dropdown-toggle"
 							type="button"
 							id="dropdownMenuButton1"
 							data-bs-toggle="dropdown"
 							aria-expanded="false"
+							style="
+								background: #edeef0;
+								border-radius: 4px;
+								font-weight: 500;
+								font-size: 15px;
+								line-height: 19px;
+							"
 						>
 							Write a Post
 						</button>
 					</li>
 					<li id="join" class="nav-item">
-						<button class="btn btn-primary">
+						<button
+							class="btn"
+							style="
+								width: 125px;
+								height: 36px;
+								left: 1115px;
+								top: 552px;
+
+								background: #2f6ce5;
+								border-radius: 4px;
+								color: white;
+							"
+						>
 							<i class="bi bi-people-fill"></i> Join Group
 						</button>
 					</li>
@@ -189,13 +296,9 @@
 							<img src="./images/article.jpg" class="img-fluid" alt="..." />
 						</div>
 						<div class="col p-3 d-flex flex-column">
-							<strong
-								class="d-inline-block mb-2 text-primary"
-								style="font-size: 18px; line-height: 23px"
-								>✍️ Article</strong
-							>
+							<h4 class="d-inline-block mb-2 text-primary">✍️ Article</h4>
 							<div class="ellipsis">
-								<h3 class="mb-0" style="font-size: 22px; line-height: 30px">
+								<h3 class="mb-0">
 									What if famous brands had regular fonts? Meet RegulaBrands!
 								</h3>
 								<!-- <button class="dots"><i class="bi bi-three-dots"></i></button> -->
@@ -224,8 +327,9 @@
 								</div>
 							</div>
 
-							<p style="font-size: 19px; line-height: 25px">
-								I’ve worked in UX for the better part of a decade. F..
+							<p id="postp">
+								I’ve worked in UX for the better part of a decade. From now on,
+								I plan to rei…
 							</p>
 							<div class="container-fluid">
 								<div class="row g-3">
@@ -240,22 +344,10 @@
 									</div>
 
 									<div class="col-8 g-3 p-3" id="views">
-										<h5
-											class="card-title"
-											style="
-												font-size: 18px;
-												line-height: 18px;
-												font-weight: 600;
-											"
-										>
-											Sarthak Kamra
-										</h5>
+										<h4 class="card-title">Sarthak Kamra</h4>
 
-										<p style="line-height: 15px; font-weight: 500">
-											<i
-												class="bi bi-eye"
-												style="font-size: 12px; line-height: 15px"
-											></i>
+										<p>
+											<i class="bi bi-eye"></i>
 											1.4k Views
 										</p>
 									</div>
@@ -283,13 +375,9 @@
 							<img src="./images/education.png" class="img-fluid" alt="..." />
 						</div>
 						<div class="col p-3 d-flex flex-column">
-							<strong
-								class="d-inline-block mb-2 text-primary"
-								style="font-size: 18px; line-height: 23px"
-								>🔬️ Education</strong
-							>
+							<h4 class="d-inline-block mb-2 text-primary">🔬️ Education</h4>
 							<div class="ellipsis">
-								<h3 class="mb-0" style="font-size: 22px; line-height: 30px">
+								<h3 class="mb-0">
 									Tax Benefits for Investment under National Pension Scheme
 									launched by Government
 								</h3>
@@ -319,8 +407,9 @@
 								</div>
 							</div>
 
-							<p style="font-size: 19px; line-height: 25px">
-								I’ve worked in UX for the better part of a decade. F..
+							<p id="postp">
+								I’ve worked in UX for the better part of a decade. From now on,
+								I plan to rei…
 							</p>
 							<div class="container-fluid">
 								<div class="row g-3">
@@ -335,22 +424,10 @@
 									</div>
 
 									<div class="col-8 g-3 p-3" id="views">
-										<h5
-											class="card-title"
-											style="
-												font-size: 18px;
-												line-height: 18px;
-												font-weight: 600;
-											"
-										>
-											Sarah West
-										</h5>
+										<h4 class="card-title">Sarah West</h4>
 
-										<p style="line-height: 15px; font-weight: 500">
-											<i
-												class="bi bi-eye"
-												style="font-size: 12px; line-height: 15px"
-											></i>
+										<p>
+											<i class="bi bi-eye"></i>
 											1.4k Views
 										</p>
 									</div>
@@ -379,13 +456,9 @@
 						</div>
 
 						<div class="col p-3 d-flex flex-column">
-							<strong
-								class="d-inline-block mb-2 text-primary"
-								style="font-size: 18px; line-height: 23px"
-								>🗓️ Meetup</strong
-							>
+							<h4 class="d-inline-block mb-2 text-primary">🗓️ Meetup</h4>
 							<div class="ellipsis">
-								<h3 class="mb-0" style="font-size: 22px; line-height: 30px">
+								<h3 class="mb-0">
 									Finance & Investment Elite Social Mixer @Lujiazui
 								</h3>
 								<!-- <button class="dots"><i class="bi bi-three-dots"></i></button> -->
@@ -415,9 +488,13 @@
 							</div>
 							<div class="container d-flex flex-row">
 								<p class="pe-5">
-									<i class="bi bi-calendar"></i>Fri, 12 Oct, 2018
+									<i class="bi bi-calendar" style="font-weight: 500"></i>Fri, 12
+									Oct, 2018
 								</p>
-								<p><i class="bi bi-geo-alt"></i>Ahmedabad, India</p>
+								<p>
+									<i class="bi bi-geo-alt" style="font-weight: 500"></i
+									>Ahmedabad, India
+								</p>
 							</div>
 							<div class="d-grid gap-2">
 								<button class="btn btn-outline-danger" type="button">
@@ -437,18 +514,9 @@
 									</div>
 
 									<div class="col-8 g-3 p-3" id="views">
-										<h5
-											class="card-title"
-											style="
-												font-size: 18px;
-												line-height: 18px;
-												font-weight: 600;
-											"
-										>
-											Ronal Jones
-										</h5>
+										<h4 class="card-title">Ronal Jones</h4>
 
-										<p style="line-height: 15px; font-weight: 500">
+										<p>
 											<i
 												class="bi bi-eye"
 												style="font-size: 12px; line-height: 15px"
@@ -477,15 +545,9 @@
 						class="row g-0 d-flex flex-column border rounded-top px-0"
 					>
 						<div class="col p-3 d-flex flex-column">
-							<strong
-								class="d-inline-block mb-2 text-primary"
-								style="font-size: 18px; line-height: 23px"
-								>💼️ Job</strong
-							>
+							<h4 class="d-inline-block mb-2 text-primary">💼️ Job</h4>
 							<div class="ellipsis">
-								<h3 class="mb-0" style="font-size: 22px; line-height: 30px">
-									Software Developer
-								</h3>
+								<h3 class="mb-0">Software Developer</h3>
 								<!-- <button class="dots"><i class="bi bi-three-dots"></i></button> -->
 								<div class="dropdown">
 									<button
@@ -513,10 +575,13 @@
 							</div>
 							<div class="container d-flex flex-row">
 								<p class="pe-5">
-									<i class="bi bi-briefcase"></i>Innovaccer Analytics Private
-									Ltd.
+									<i class="bi bi-briefcase" style="font-weight: 500"></i
+									>Innovaccer Analytics Private Ltd.
 								</p>
-								<p><i class="bi bi-geo-alt"></i>Noida, India</p>
+								<p>
+									<i class="bi bi-geo-alt" style="font-weight: 500"></i>Noida,
+									India
+								</p>
 							</div>
 							<div class="d-grid gap-2">
 								<button class="btn btn-outline-success" type="button">
@@ -536,7 +601,7 @@
 									</div>
 
 									<div class="col-8 g-3 p-3" id="views">
-										<h5
+										<h4
 											class="card-title"
 											style="
 												font-size: 18px;
@@ -545,7 +610,7 @@
 											"
 										>
 											Joseph Gray
-										</h5>
+										</h4>
 
 										<p style="line-height: 15px; font-weight: 500">
 											<i
@@ -609,138 +674,7 @@
 						<i class="bi bi-exclamation-circle"></i>Your location will help us
 						serve better and extend a personalised experience.
 					</p>
-					<div class="container d-flex flex-column px-0">
-						<h6 class="p-0" style="font-size: 16px">
-							<i class="bi bi-hand-thumbs-up-fill"></i>Recommended Groups
-						</h6>
-
-						<div class="group-container">
-							<ul id="group1">
-								<li>
-									<ul id="group2">
-										<li>
-											<img
-												src="/images/images.jpeg"
-												class="img-fluid rounded-circle"
-												alt="..."
-											/>
-										</li>
-										<li>
-											<h5
-												class="card-title"
-												style="font-size: 14px; line-height: 18px"
-											>
-												Leisure
-											</h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<button
-										class="btn btn-secondary btn-outline-light rounded-pill"
-										type="button"
-										aria-expanded="false"
-										style="font-size: 12px; height: 24px"
-									>
-										<p style="line-height: 16px">Followed</p>
-									</button>
-								</li>
-							</ul>
-							<ul id="group1">
-								<li>
-									<ul id="group2">
-										<li>
-											<img
-												src="/images/Protesting-Sign.jpg"
-												class="img-fluid rounded-circle"
-												alt="..."
-											/>
-										</li>
-										<li>
-											<h5
-												class="card-title"
-												style="font-size: 14px; line-height: 18px"
-											>
-												Activism
-											</h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<button
-										class="btn btn-outline-light rounded-pill"
-										type="button"
-										aria-expanded="false"
-										style="font-size: 12px; height: 24px; color: black"
-									>
-										<p style="line-height: 16px">Follow</p>
-									</button>
-								</li>
-							</ul>
-							<ul id="group1">
-								<li>
-									<ul id="group2">
-										<li>
-											<img
-												src="/images/mba.jpg"
-												class="img-fluid rounded-circle"
-												alt="..."
-											/>
-										</li>
-										<li>
-											<h5
-												class="card-title"
-												style="font-size: 14px; line-height: 18px"
-											>
-												MBA
-											</h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<button
-										class="btn btn-outline-light rounded-pill"
-										type="button"
-										aria-expanded="false"
-										style="font-size: 12px; height: 24px; color: black"
-									>
-										<p style="line-height: 16px">Follow</p>
-									</button>
-								</li>
-							</ul>
-							<ul id="group1">
-								<li>
-									<ul id="group2">
-										<li>
-											<img
-												src="/images/Aristotle-Biography.jpg"
-												class="img-fluid rounded-circle"
-												alt="..."
-											/>
-										</li>
-										<li>
-											<h5
-												class="card-title"
-												style="font-size: 14px; line-height: 18px"
-											>
-												Philosophy
-											</h5>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<button
-										class="btn btn-outline-light rounded-pill"
-										type="button"
-										aria-expanded="false"
-										style="font-size: 12px; height: 24px; color: black"
-									>
-										<p style="line-height: 16px">Follow</p>
-									</button>
-								</li>
-							</ul>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -798,13 +732,10 @@
 										</div>
 
 										<div class="input-group mb-0">
-											<input id="signinpass"
+											<input
+												id="signinpass"
 												type="text"
-												class="
-													form-control
-													
-													
-												"
+												class="form-control"
 												placeholder="Password"
 												aria-label="Username"
 												aria-describedby="basic-addons1"

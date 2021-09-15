@@ -16,6 +16,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0;
+	color: #000000;
 }
 #hero {
 	background-size: cover;
@@ -29,16 +30,40 @@ h3,
 h4,
 h5 {
 	font-family: "IBM Plex Sans", sans-serif !important;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 21px;
 }
 p,
 div {
 	font-family: "IBM Plex Sans", sans-serif !important;
-	line-height: 18px;
+}
+h3 {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 22px;
+	/* identical to box height */
+
+	color: #000000;
+}
+h4 {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: bold;
 	font-size: 14px;
-	font-weight: normal;
+	line-height: 18px;
+	letter-spacing: 0.01em;
+
+	color: #212529;
+}
+h5 {
+	font-family: IBM Plex Sans;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 16px;
+	/* identical to box height */
+
+	color: #495057;
 }
 .ellipsis {
 	display: flex;
@@ -225,8 +250,8 @@ nav {
 	display: none !important;
 }
 #joint {
-		display: block;
-	}
+	display: block;
+}
 .fab-container {
 	position: fixed;
 	bottom: 50px;
@@ -511,6 +536,38 @@ nav {
 	}
 }
 @media (min-width: 1200px) {
+	h3 {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 134.17%;
+		/* or 30px */
+	}
+	h4 {
+		font-family: IBM Plex Sans;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 23px;
+	}
+	h5 {
+		font-family: IBM Plex Sans;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 16px;
+		/* identical to box height */
+	}
+	#postp {
+		font-weight: normal;
+font-size: 19px;
+line-height: 134.17%;
+/* or 25px */
+
+
+color: #5C5C5C;
+
+	}
 	#filter {
 		display: none;
 		flex-direction: row;
