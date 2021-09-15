@@ -23,28 +23,32 @@
 		/>
 	</head>
 	<body>
-		<ul id="topnav" class="pt-2 nav nav-pills fixed-top bg-light">
-			<li id="item1" class="nav-item">
-				<img src="./images/uxwing-svg-icon-editor (1).svg" alt="brand" />
-			</li>
+		<nav>
+			<ul
+				id="topnav"
+				class="pt-2 nav nav-pills fixed-top bg-light position-relative"
+			>
+				<li id="item1" class="nav-item">
+					<img src="./images/uxwing-svg-icon-editor (1).svg" alt="brand" />
+				</li>
 
-			<li id="item1" class="nav-item">
-				<div class="input-group mb-3">
-					<span class="input-group-text bg-transparent" id="basic-addon1"
-						><i class="bi bi-search bg-transparent"></i
-					></span>
-					<input
-						type="text"
-						class="form-control"
-						placeholder="Search for your favorite groups in ATG"
-						aria-label="Username"
-						aria-describedby="basic-addon1"
-						id="searchtop"
-					/>
-				</div>
-			</li>
-			<li id="item1" class="nav-item">
-				<div class="user-container">
+				<li id="item1" class="nav-item">
+					<div class="input-group mb-3">
+						<span class="input-group-text bg-transparent" id="basic-addon1"
+							><i class="bi bi-search bg-transparent"></i
+						></span>
+						<input
+							type="text"
+							class="form-control"
+							placeholder="Search for your favorite groups in ATG"
+							aria-label="Username"
+							aria-describedby="basic-addon1"
+							id="searchtop"
+						/>
+					</div>
+				</li>
+				<li id="item1" class="nav-item">
+					<div class="user-container">
 					<img
 						src="./images/joseph.png"
 						class="img-fluid rounded-circle"
@@ -60,61 +64,100 @@
 						Siddhart Goyal
 					</button>
 				</div>
-			</li>
-			<li id="item2" class="nav-item px-5">
-				<i class="bi bi-list-nested"></i>
-			</li>
-		</ul>
-		<div class="container-fluid px-0" style="height: 440px">
-			<div
-				id="hero"
-				class="text-white rounded position-relative px-0"
-				style="height: 440px; background-repeat: no-repeat"
-			>
-				<div
-					id="hero-layer"
-					class="container-fluid hero-layerr position-absolute"
-					style="height: 440px"
-				></div>
-				<div id="hero-cntent" class="col-md-6 px-0 position-absolute">
-					<h1 class="display-10">Computer Engineering</h1>
+				</li>
+				<li id="item2" class="nav-item px-5">
+					<i class="bi bi-list-nested"></i>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="container-fluid px-0">
+			<div class="jumbotron jumbotron-fluid position-relative">
+				<button id="back" class="btn position-absolute top-0 start-0 ms-5 mt-5">
+					<i class="bi bi-arrow-left text-white"></i>
+				</button>
+				<button
+					id="join"
+					class="
+						btn btn-dark
+						position-absolute
+						top-0
+						end-0
+						me-5
+						mt-5
+						text-white
+					"
+				>
+					Join Group
+				</button>
+				<div id="herocontent" class="container">
+					<h1 class="display-4">Computer Engineering</h1>
 					<p>142,765 Computer Engineers follow this</p>
 				</div>
 			</div>
+		</main>
+		<div id="filter" class="row pt-3 px-5">
+			<div class="col">
+				<h3 style="font-weight: 600">Posts(368)</h3>
+			</div>
+			<div class="col d-flex flex-row-reverse">
+				<div class="dropdown">
+					<button
+						class="btn btn-light dropdown-toggle"
+						type="button"
+						id="dropdownMenuButton1"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						Filter:All
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
+
 		<ul
-			class="nav nav-tabs sticky-top bg-light col-md-8"
-			style="padding-top: 55px"
+			class="
+				nav nav-tabs
+				sticky-top
+				bg-light
+				col-md-8 
+				justify-content-between
+				mx-auto
+			"
+			style="padding-top: 55px; "
 			id="allposts"
 		>
-			<li>
+			<li class="nav-item justify-content-between">
 				<div id="sticky-list">
-					<!-- <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#"></a>
-							Posts(38)</a>
-					</li> -->
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#"
-							>All Posts(32)</a
-						>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Article</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Event</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Education</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Job</a>
-					</li>
+					<ul class="nav nav-tabs justify-content-between">
+						<li class="nav-item px-0">
+							<a class="nav-link active px-1" aria-current="page" href="#"
+								>All Posts(32)</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Article</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Event</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Education</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Job</a>
+						</li>
+					</ul>
 				</div>
 			</li>
-			<li>
-				<ul id="twonav" class="nav">
-					<li class="nav-item px-3">
+			<li class="nav-item">
+				<ul id="twonav " class="nav">
+					<li id="write" class="nav-item px-3">
 						<button
 							class="btn btn-secondary dropdown-toggle"
 							type="button"
@@ -125,7 +168,7 @@
 							Write a Post
 						</button>
 					</li>
-					<li class="nav-item">
+					<li id="join" class="nav-item">
 						<button class="btn btn-light">
 							<i class="bi bi-people-fill"></i> Leavegroup
 						</button>
@@ -134,8 +177,9 @@
 			</li>
 		</ul>
 
+
 		<div class="row justify-content-center py-5">
-			<div class="col-md-6">
+			<div class="col-md-6 col-lg-6">
 				<div class="row g-0 border rounded">
 					<div class="col p-0 d-flex flex-column">
 						<div class="col p-0 d-flex flex-column">
@@ -858,6 +902,11 @@
 						</button>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="fab-container">
+			<div class="fab fab-icon-holder">
+				<i class="bi bi-pen"></i>
 			</div>
 		</div>
 		<script
