@@ -79,13 +79,13 @@
 			</ul>
 		</nav>
 
-		<main class="container-fluid px-0">
-			<div class="jumbotron jumbotron-fluid position-relative">
+		<main class="container-fluid px-0 mx-0">
+			<div class="jumbotron jumbotron-fluid position-relative mx-0">
 				<button id="back" class="btn position-absolute top-0 start-0 ms-5 mt-5">
 					<i class="bi bi-arrow-left text-white"></i>
 				</button>
 				<button
-					id="join"
+					id="joint"
 					class="
 						btn btn-dark
 						position-absolute
@@ -104,7 +104,7 @@
 				</div>
 			</div>
 		</main>
-		<div id="filter" class="row pt-3 px-5">
+		<div id="filter" class="row pt-3 px-0 mx-0">
 			<div class="col">
 				<h3 style="font-weight: 600">Posts(368)</h3>
 			</div>
@@ -129,20 +129,13 @@
 		</div>
 
 		<ul
-			class="
-				nav nav-tabs
-				sticky-top
-				bg-light
-				col-md-8 
-				justify-content-between
-				mx-auto
-			"
-			style="padding-top: 55px; "
+			class="nav nav-tabs sticky-top bg-light container-xl"
+			style="padding-top: 55px"
 			id="allposts"
 		>
-			<li class="nav-item justify-content-between">
+			<li class="nav-item ">
 				<div id="sticky-list">
-					<ul class="nav nav-tabs justify-content-between">
+					<ul class="nav nav-tabs ">
 						<li class="nav-item px-0">
 							<a class="nav-link active px-1" aria-current="page" href="#"
 								>All Posts(32)</a
@@ -185,14 +178,17 @@
 			</li>
 		</ul>
 
-		<div class="row justify-content-center  mx-auto py-5">
-			<div class="col-md-6 col-lg-6">
-				<div class="row g-0 border rounded">
-					<div class="col p-0 d-flex flex-column">
+		<div class="container-xl">
+			<div class="row py-5">
+				<div class="col-md-8 col-lg-8 px-0">
+					<div
+						id="postrow"
+						class="row g-0 d-flex flex-column border rounded-top px-0"
+					>
 						<div class="col p-0 d-flex flex-column">
 							<img src="./images/article.jpg" class="img-fluid" alt="..." />
 						</div>
-						<div class="col p-4 d-flex flex-column">
+						<div class="col p-3 d-flex flex-column">
 							<strong
 								class="d-inline-block mb-2 text-primary"
 								style="font-size: 18px; line-height: 23px"
@@ -263,7 +259,7 @@
 											1.4k Views
 										</p>
 									</div>
-									<div class="col-1 g-3 p-3">
+									<div id="sharecard" class="col-2 g-3 p-3">
 										<button
 											class="btn btn-secondary btn-outline-light"
 											type="button"
@@ -279,13 +275,14 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row g-0 my-5 border rounded">
-					<div class="col p-0 d-flex flex-column">
+					<div
+						id="postrow"
+						class="row g-0 d-flex flex-column border rounded-top px-0"
+					>
 						<div class="col p-0 d-flex flex-column">
-							<img src="/images/education.png" class="img-fluid" alt="..." />
+							<img src="./images/education.png" class="img-fluid" alt="..." />
 						</div>
-						<div class="col p-4 d-flex flex-column">
+						<div class="col p-3 d-flex flex-column">
 							<strong
 								class="d-inline-block mb-2 text-primary"
 								style="font-size: 18px; line-height: 23px"
@@ -357,7 +354,7 @@
 											1.4k Views
 										</p>
 									</div>
-									<div class="col-1 g-3 p-3">
+									<div class="col-2">
 										<button
 											class="btn btn-secondary btn-outline-light"
 											type="button"
@@ -373,13 +370,15 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row g-0 my-5 border rounded">
-					<div class="col p-0 d-flex flex-column">
+					<div
+						id="postrow"
+						class="row g-0 d-flex flex-column border rounded-top px-0"
+					>
 						<div class="col p-0 d-flex flex-column">
-							<img src="/images/meetup.png" class="img-fluid" alt="..." />
+							<img src="./images/meetup.png" class="img-fluid" alt="..." />
 						</div>
-						<div class="col p-4 d-flex flex-column">
+
+						<div class="col p-3 d-flex flex-column">
 							<strong
 								class="d-inline-block mb-2 text-primary"
 								style="font-size: 18px; line-height: 23px"
@@ -457,7 +456,7 @@
 											1.4k Views
 										</p>
 									</div>
-									<div class="col-1 g-3 p-3">
+									<div id="sharecard" class="col-2 g-3 p-3">
 										<button
 											class="btn btn-secondary btn-outline-light"
 											type="button"
@@ -473,10 +472,11 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row g-0 my-5 border rounded">
-					<div class="col p-0 d-flex flex-column">
-						<div class="col p-4 d-flex flex-column">
+					<div
+						id="postrow"
+						class="row g-0 d-flex flex-column border rounded-top px-0"
+					>
+						<div class="col p-3 d-flex flex-column">
 							<strong
 								class="d-inline-block mb-2 text-primary"
 								style="font-size: 18px; line-height: 23px"
@@ -528,7 +528,7 @@
 									<div class="col-2 g-3">
 										<div class="img-container p-3">
 											<img
-												src="/images/joseph.png"
+												src="/images/ronal.png"
 												class="img rounded-start w-auto"
 												alt="..."
 											/>
@@ -555,7 +555,7 @@
 											1.4k Views
 										</p>
 									</div>
-									<div class="col-1 g-3 p-3">
+									<div id="sharecard" class="col-2 g-3 p-3">
 										<button
 											class="btn btn-secondary btn-outline-light"
 											type="button"
@@ -572,178 +572,179 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="location" class="col-md-3 ps-lg-5">
-				<div class="input-group mb-3">
-					<span
-						class="
-							input-group-text
-							border-top-0 border-start-0
-							bg-transparent
-							border-end-0
-							rounded-0
-						"
-						><i class="bi bi-geo-alt"></i
-					></span>
-					<input
-						type="text"
-						class="
-							border-top-0 border-start-0
-							form-control
-							bord
-							border-start-0 border-end-0 border-bottom
-						"
-						aria-label="Amount (to the nearest dollar)"
-						placeholder="Enter Your location"
-					/>
-					<span
-						class="
-							input-group-text
-							bg-transparent
-							border-start-0 border-top-0 border-start-0 border-end-0
-							rounded-0
-						"
-						><i class="bi bi-pen-fill"></i
-					></span>
-				</div>
-				<p style="opacity: 0.5" style="font-size: 12px; line-height: 13">
-					<i class="bi bi-exclamation-circle"></i>Your location will help us
-					serve better and extend a personalised experience.
-				</p>
-				<div class="container d-flex flex-column px-0">
-					<h6 class="p-0" style="font-size: 16px">
-						<i class="bi bi-hand-thumbs-up-fill"></i>Recommended Groups
-					</h6>
+				<div id="location" class="col-md-4 ps-lg-5">
+					<div class="input-group mb-3">
+						<span
+							class="
+								input-group-text
+								border-top-0 border-start-0
+								bg-transparent
+								border-end-0
+								rounded-0
+							"
+							><i class="bi bi-geo-alt"></i
+						></span>
+						<input
+							type="text"
+							class="
+								border-top-0 border-start-0
+								form-control
+								bord
+								border-start-0 border-end-0 border-bottom
+							"
+							aria-label="Amount (to the nearest dollar)"
+							placeholder="Enter Your location"
+						/>
+						<span
+							class="
+								input-group-text
+								bg-transparent
+								border-start-0 border-top-0 border-start-0 border-end-0
+								rounded-0
+							"
+							><i class="bi bi-pen-fill"></i
+						></span>
+					</div>
+					<p style="opacity: 0.5" style="font-size: 12px; line-height: 13">
+						<i class="bi bi-exclamation-circle"></i>Your location will help us
+						serve better and extend a personalised experience.
+					</p>
+					<div class="container d-flex flex-column px-0">
+						<h6 class="p-0" style="font-size: 16px">
+							<i class="bi bi-hand-thumbs-up-fill"></i>Recommended Groups
+						</h6>
 
-					<div class="group-container">
-						<ul id="group1">
-							<li>
-								<ul id="group2">
-									<li>
-										<img
-											src="/images/images.jpeg"
-											class="img-fluid rounded-circle"
-											alt="..."
-										/>
-									</li>
-									<li>
-										<h5
-											class="card-title"
-											style="font-size: 14px; line-height: 18px"
-										>
-											Leisure
-										</h5>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<button
-									class="btn btn-secondary btn-outline-light rounded-pill"
-									type="button"
-									aria-expanded="false"
-									style="font-size: 12px; height: 24px"
-								>
-									<p style="line-height: 16px">Followed</p>
-								</button>
-							</li>
-						</ul>
-						<ul id="group1">
-							<li>
-								<ul id="group2">
-									<li>
-										<img
-											src="/images/Protesting-Sign.jpg"
-											class="img-fluid rounded-circle"
-											alt="..."
-										/>
-									</li>
-									<li>
-										<h5
-											class="card-title"
-											style="font-size: 14px; line-height: 18px"
-										>
-											Activism
-										</h5>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<button
-									class="btn btn-outline-light rounded-pill"
-									type="button"
-									aria-expanded="false"
-									style="font-size: 12px; height: 24px; color: black"
-								>
-									<p style="line-height: 16px">Follow</p>
-								</button>
-							</li>
-						</ul>
-						<ul id="group1">
-							<li>
-								<ul id="group2">
-									<li>
-										<img
-											src="/images/mba.jpg"
-											class="img-fluid rounded-circle"
-											alt="..."
-										/>
-									</li>
-									<li>
-										<h5
-											class="card-title"
-											style="font-size: 14px; line-height: 18px"
-										>
-											MBA
-										</h5>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<button
-									class="btn btn-outline-light rounded-pill"
-									type="button"
-									aria-expanded="false"
-									style="font-size: 12px; height: 24px; color: black"
-								>
-									<p style="line-height: 16px">Follow</p>
-								</button>
-							</li>
-						</ul>
-						<ul id="group1">
-							<li>
-								<ul id="group2">
-									<li>
-										<img
-											src="/images/Aristotle-Biography.jpg"
-											class="img-fluid rounded-circle"
-											alt="..."
-										/>
-									</li>
-									<li>
-										<h5
-											class="card-title"
-											style="font-size: 14px; line-height: 18px"
-										>
-											Philosophy
-										</h5>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<button
-									class="btn btn-outline-light rounded-pill"
-									type="button"
-									aria-expanded="false"
-									style="font-size: 12px; height: 24px; color: black"
-								>
-									<p style="line-height: 16px">Follow</p>
-								</button>
-							</li>
-						</ul>
+						<div class="group-container">
+							<ul id="group1">
+								<li>
+									<ul id="group2">
+										<li>
+											<img
+												src="/images/images.jpeg"
+												class="img-fluid rounded-circle"
+												alt="..."
+											/>
+										</li>
+										<li>
+											<h5
+												class="card-title"
+												style="font-size: 14px; line-height: 18px"
+											>
+												Leisure
+											</h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button
+										class="btn btn-secondary btn-outline-light rounded-pill"
+										type="button"
+										aria-expanded="false"
+										style="font-size: 12px; height: 24px"
+									>
+										<p style="line-height: 16px">Followed</p>
+									</button>
+								</li>
+							</ul>
+							<ul id="group1">
+								<li>
+									<ul id="group2">
+										<li>
+											<img
+												src="/images/Protesting-Sign.jpg"
+												class="img-fluid rounded-circle"
+												alt="..."
+											/>
+										</li>
+										<li>
+											<h5
+												class="card-title"
+												style="font-size: 14px; line-height: 18px"
+											>
+												Activism
+											</h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button
+										class="btn btn-outline-light rounded-pill"
+										type="button"
+										aria-expanded="false"
+										style="font-size: 12px; height: 24px; color: black"
+									>
+										<p style="line-height: 16px">Follow</p>
+									</button>
+								</li>
+							</ul>
+							<ul id="group1">
+								<li>
+									<ul id="group2">
+										<li>
+											<img
+												src="/images/mba.jpg"
+												class="img-fluid rounded-circle"
+												alt="..."
+											/>
+										</li>
+										<li>
+											<h5
+												class="card-title"
+												style="font-size: 14px; line-height: 18px"
+											>
+												MBA
+											</h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button
+										class="btn btn-outline-light rounded-pill"
+										type="button"
+										aria-expanded="false"
+										style="font-size: 12px; height: 24px; color: black"
+									>
+										<p style="line-height: 16px">Follow</p>
+									</button>
+								</li>
+							</ul>
+							<ul id="group1">
+								<li>
+									<ul id="group2">
+										<li>
+											<img
+												src="/images/Aristotle-Biography.jpg"
+												class="img-fluid rounded-circle"
+												alt="..."
+											/>
+										</li>
+										<li>
+											<h5
+												class="card-title"
+												style="font-size: 14px; line-height: 18px"
+											>
+												Philosophy
+											</h5>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<button
+										class="btn btn-outline-light rounded-pill"
+										type="button"
+										aria-expanded="false"
+										style="font-size: 12px; height: 24px; color: black"
+									>
+										<p style="line-height: 16px">Follow</p>
+									</button>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<div
 			class="modal fade"
 			id="exampleModal"
@@ -751,13 +752,9 @@
 			aria-labelledby="exampleModalLabel"
 			aria-hidden="true"
 		>
-			<div
-				class="
-					modal-dialog modal-lg modal-dialog-centered
-				"
-			>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
 				<div class="modal-content">
-					<div class="modal-header bg-transparent">
+					<div id="mh1" class="modal-header bg-transparent">
 						<button
 							id="lgcross"
 							type="button"
@@ -768,7 +765,7 @@
 					</div>
 					<div class="modal-header">
 						<h5
-							class="modal-title text-success"
+							class="modal-title text-success text-center"
 							id="exampleModalLabel"
 							style="font-size: 14px; line-height: 16px"
 						>
@@ -891,13 +888,9 @@
 			aria-labelledby="exampleModalToggleLabel2"
 			tabindex="-1"
 		>
-			<div
-				class="
-					modal-dialog modal-lg  modal-dialog-centered
-				"
-			>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
 				<div class="modal-content">
-					<div class="modal-header bg-transparent">
+					<div id="mh1" class="modal-header bg-transparent">
 						<button
 							id="lgcross"
 							type="button"
@@ -908,7 +901,7 @@
 					</div>
 					<div class="modal-header">
 						<h5
-							class="modal-title text-success"
+							class="modal-title text-success text-center"
 							id="exampleModalLabel"
 							style="font-size: 14px; line-height: 16px"
 						>
