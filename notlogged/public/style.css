@@ -70,10 +70,23 @@ div {
 #location {
 	display: none;
 }
+#signinpass {
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-right: 0;
+}
 #basic-addon1 {
 	border-bottom-left-radius: 50px;
 	border-top-left-radius: 50px;
 	border-right: 0;
+}
+#basic-addons1 {
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-right: 1;
 }
 #searchtop {
 	border-left: 0;
@@ -211,6 +224,9 @@ nav {
 #twonav {
 	display: none !important;
 }
+#joint {
+		display: block;
+	}
 .fab-container {
 	position: fixed;
 	bottom: 50px;
@@ -287,12 +303,12 @@ nav {
 	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 	margin-right: 10px;
 }
-#exampleModal{
-		padding-top: 350px;
-	}
-	#exampleModalToggle2{
-		padding-top: 350px;
-	}
+#exampleModal {
+	padding-top: 150px;
+}
+#exampleModalToggle2 {
+	padding-top: 150px;
+}
 @media (min-width: 576px) {
 	#filter {
 		display: flex;
@@ -329,11 +345,10 @@ nav {
 		justify-content: space-between;
 	}
 	#herocontent {
+		position: static;
 		display: flex;
 		flex-direction: column;
-		text-align: center;
 		justify-content: space-between;
-		width: 65%;
 	}
 	#twonav {
 		display: none !important;
@@ -344,10 +359,10 @@ nav {
 	#join {
 		display: none;
 	}
-	#exampleModal{
+	#exampleModal {
 		padding-top: 350px;
 	}
-	#exampleModalToggle2{
+	#exampleModalToggle2 {
 		padding-top: 350px;
 	}
 }
@@ -411,7 +426,6 @@ nav {
 	}
 	#item1 {
 		display: block;
-		
 	}
 	nav {
 		padding-left: 80px;
@@ -423,7 +437,6 @@ nav {
 	#smcross {
 		display: block;
 	}
-	
 
 	#write {
 		display: none;
@@ -440,10 +453,10 @@ nav {
 	#mh1 {
 		display: none;
 	}
-	#exampleModal{
+	#exampleModal {
 		padding-top: 350px;
 	}
-	#exampleModalToggle2{
+	#exampleModalToggle2 {
 		padding-top: 350px;
 	}
 }
@@ -460,7 +473,6 @@ nav {
 	}
 	#allposts {
 		display: none;
-		
 	}
 
 	#twonav button {
@@ -484,10 +496,10 @@ nav {
 	#join {
 		display: none;
 	}
-#exampleModal{
+	#exampleModal {
 		padding-top: 0px;
 	}
-	#exampleModalToggle2{
+	#exampleModalToggle2 {
 		padding-top: 0px;
 	}
 	#create {
