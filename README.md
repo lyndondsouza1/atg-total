@@ -2,8 +2,8 @@
 
 
 for the sign in in page
-https://assign-notloggedin.web.app/
+https://keen-wescoff-54c4b7.netlify.app/
 
 
 for the logged in page
-https://assignloggedin.web.app/
+https://sad-fermi-028568.netlify.app/
